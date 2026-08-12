@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign Up | Bite Box</title>
+<meta name="description" content="Create your Bite Box account to start ordering.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍔</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container navbar">
+    <a href="index.html" class="brand"><span class="brand-mark">BB</span>Bite <span>Box</span></a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="offers.html">Offers</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="cart.html" class="icon-link" aria-label="Cart">🛍️</a>
+    </div>
+  </div>
+</header>
+
+<main class="auth-split">
+  <div class="auth-visual">
+    <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=900&q=80" alt="Wood fired pizza presentation">
+    <div class="auth-visual-content">
+      <span class="hero-eyebrow">Join Bite Box</span>
+      <h2 style="margin-top:1rem;">Create Your Free Account</h2>
+      <p>Unlock faster checkout, saved addresses and exclusive member offers.</p>
+    </div>
+  </div>
+
+  <div class="section" style="display:flex; align-items:center; justify-content:center; padding-block:3rem;">
+    <div class="auth-card reveal">
+      <div class="text-center" style="margin-bottom:1.8rem;">
+        <a href="index.html" class="brand" style="justify-content:center; display:inline-flex;"><span class="brand-mark">BB</span>Bite <span>Box</span></a>
+        <p style="color:var(--text-muted); margin-top:.6rem;">Create your account</p>
+      </div>
+
+      <form action="#" method="post">
+        <div class="form-group">
+          <label for="s-name">Full Name</label>
+          <input class="input" type="text" id="s-name" name="name" required minlength="2" maxlength="60" placeholder="Your full name">
+        </div>
+        <div class="form-group">
+          <label for="s-email">Email Address</label>
+          <input class="input" type="email" id="s-email" name="email" required placeholder="you@example.com">
+        </div>
+        <div class="form-group">
+          <label for="s-mobile">Mobile Number</label>
+          <input class="input" type="tel" id="s-mobile" name="mobile" required pattern="[0-9]{10}" placeholder="98765 43210">
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="s-password">Password</label>
+            <input class="input" type="password" id="s-password" name="password" required minlength="6" placeholder="••••••••">
+          </div>
+          <div class="form-group">
+            <label for="s-confirm">Confirm Password</label>
+            <input class="input" type="password" id="s-confirm" name="confirm" required minlength="6" placeholder="••••••••">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="check-row"><input type="checkbox" name="terms" required> I agree to the <a href="#" style="color:var(--gold-light);">Terms &amp; Conditions</a></label>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Create Account →</button>
+      </form>
+
+      <p class="text-center" style="margin-top:1.6rem; color:var(--text-muted); font-size:.9rem;">
+        Already have an account? <a href="login.html" style="color:var(--gold-light); font-weight:600;">Login</a>
+      </p>
+    </div>
+  </div>
+</main>
+
+</body>
+</html>

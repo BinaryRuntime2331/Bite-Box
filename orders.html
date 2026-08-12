@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Order History | Bite Box</title>
+<meta name="description" content="View your past Bite Box orders and their status.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍔</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container navbar">
+    <a href="index.html" class="brand"><span class="brand-mark">BB</span>Bite <span>Box</span></a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="about.html">About</a>
+      <a href="offers.html">Offers</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="profile.html" class="icon-link" aria-label="Account">👤</a>
+      <a href="cart.html" class="icon-link" aria-label="Cart">🛍️<span class="icon-badge">3</span></a>
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle menu"><span></span><span></span><span></span></label>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero" style="padding-bottom:1.5rem;">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Home</a><span class="sep">/</span><a href="profile.html">Profile</a><span class="sep">/</span><span class="current">Order History</span></div>
+      <h1>Order History</h1>
+      <p>Track and review all your past Bite Box orders.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0;">
+    <div class="container">
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Order ID</th><th>Date</th><th>Items</th><th>Payment</th><th>Total</th><th>Status</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>#BB10245</strong></td>
+              <td>Aug 08, 2026</td>
+              <td>Smoky Double Smash, Lava Cake</td>
+              <td>UPI</td>
+              <td>₹518</td>
+              <td><span class="status status-delivered">Delivered</span></td>
+            </tr>
+            <tr>
+              <td><strong>#BB10198</strong></td>
+              <td>Jul 29, 2026</td>
+              <td>Truffle Margherita, Cold Brew</td>
+              <td>Card</td>
+              <td>₹528</td>
+              <td><span class="status status-delivered">Delivered</span></td>
+            </tr>
+            <tr>
+              <td><strong>#BB10176</strong></td>
+              <td>Jul 21, 2026</td>
+              <td>Family Feast Combo</td>
+              <td>Cash on Delivery</td>
+              <td>₹1299</td>
+              <td><span class="status status-progress">Out for Delivery</span></td>
+            </tr>
+            <tr>
+              <td><strong>#BB10150</strong></td>
+              <td>Jul 10, 2026</td>
+              <td>Peri-Peri Wrap, Fries</td>
+              <td>UPI</td>
+              <td>₹398</td>
+              <td><span class="status status-cancelled">Cancelled</span></td>
+            </tr>
+            <tr>
+              <td><strong>#BB10122</strong></td>
+              <td>Jun 30, 2026</td>
+              <td>Loaded Nachos, Iced Coffee</td>
+              <td>Card</td>
+              <td>₹308</td>
+              <td><span class="status status-pending">Processing</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- EMPTY HISTORY STATE (reference) -->
+      <div class="divider-gold"></div>
+      <div class="section-header center"><span class="eyebrow">For reference</span><h2 style="font-size:1.6rem;">Empty History State</h2></div>
+      <div class="empty-state card" style="max-width:480px; margin-inline:auto;">
+        <div class="icon">📦</div>
+        <h3>No orders yet</h3>
+        <p>Once you place an order, it will show up here.</p>
+        <a href="menu.html" class="btn btn-primary">Start an Order</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none; padding-top:0;">
+      <span>© 2026 Bite Box. All rights reserved.</span>
+      <div class="footer-bottom-links"><a href="contact.html">Privacy Policy</a><a href="contact.html">Terms of Service</a></div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

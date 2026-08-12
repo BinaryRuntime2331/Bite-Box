@@ -1,0 +1,119 @@
+/* ============================================================
+   BITE BOX — responsive.css
+   Breakpoints + responsive grid/nav adjustments.
+   Breakpoints: 1440 (laptop), 1080 (tablet), 720 (mobile)
+   ============================================================ */
+
+/* ---------- Fluid grids (auto-fit) used across pages ---------- */
+.menu-grid{ display:grid; grid-template-columns:repeat(auto-fit, minmax(270px,1fr)); gap:1.8rem; }
+.review-grid{ display:grid; grid-template-columns:repeat(auto-fit, minmax(300px,1fr)); gap:1.6rem; }
+.feature-grid{ display:grid; grid-template-columns:repeat(auto-fit, minmax(230px,1fr)); gap:1.5rem; }
+.offer-grid-basic{ display:grid; grid-template-columns:repeat(auto-fit, minmax(280px,1fr)); gap:1.6rem; }
+.category-grid{ display:grid; grid-template-columns:repeat(auto-fit, minmax(150px,1fr)); gap:1.3rem; }
+
+/* Asymmetric featured / signature dish grid */
+.signature-grid{ display:grid; grid-template-columns:repeat(4, 1fr); grid-auto-rows:220px; gap:1.4rem; }
+.signature-grid .span-2{ grid-column:span 2; }
+.signature-grid .span-row-2{ grid-row:span 2; }
+.signature-grid .food-card-media{ height:100%; aspect-ratio:auto; }
+.signature-grid .food-card{ display:flex; flex-direction:column; }
+.signature-grid .food-card-media{ flex:1; }
+
+/* Offers hero grid: large featured + smaller cards */
+.offers-grid{ display:grid; grid-template-columns:1.4fr 1fr; gap:1.6rem; }
+.offers-grid .offer-card.featured{ grid-row:span 2; }
+.offers-sub{ display:grid; gap:1.6rem; }
+
+/* Fluid type */
+.fluid-h1{ font-size:clamp(2.2rem,5vw,3.6rem); }
+
+/* Typography clamp everywhere via hero/section already using clamp() */
+
+/* ================= Large Desktop (default, >1440px enhancements) ================= */
+@media (min-width:1441px){
+  .container{ max-width:1360px; }
+}
+
+/* ================= Laptop (≤1440px) ================= */
+@media (max-width:1440px){
+  :root{ --space-xl:4.2rem; }
+  .hero-grid{ gap:2.4rem; }
+}
+
+/* ================= Tablet (≤1080px) ================= */
+@media (max-width:1080px){
+  .nav-links{ display:none; }
+  .nav-toggle-label{
+    display:flex; align-items:center; justify-content:center; width:42px; height:42px;
+    border-radius:50%; border:1px solid var(--border-soft); background:rgba(255,255,255,0.05); cursor:pointer;
+    flex-direction:column; gap:4px;
+  }
+  .nav-toggle-label span{ width:18px; height:2px; background:var(--text-primary); display:block; transition:.3s ease; }
+
+  .nav-toggle:checked ~ .nav-links{
+    display:flex; position:absolute; top:var(--header-h); left:0; right:0; flex-direction:column;
+    background:rgba(10,9,8,0.98); backdrop-filter:blur(16px); padding:1.5rem clamp(1.25rem,4vw,2.5rem);
+    border-bottom:1px solid var(--border-soft); gap:1.1rem; animation:fadeUp .35s ease;
+  }
+  .nav-toggle:checked ~ .nav-actions .nav-toggle-label span:nth-child(1){ transform:translateY(6px) rotate(45deg); }
+  .nav-toggle:checked ~ .nav-actions .nav-toggle-label span:nth-child(2){ opacity:0; }
+  .nav-toggle:checked ~ .nav-actions .nav-toggle-label span:nth-child(3){ transform:translateY(-6px) rotate(-45deg); }
+
+  .hero-grid{ grid-template-columns:1fr; text-align:center; }
+  .hero p{ margin-inline:auto; }
+  .hero-cta{ justify-content:center; }
+  .hero-stats{ justify-content:center; }
+  .hero-visual{ order:-1; }
+
+  .footer-grid{ grid-template-columns:1fr 1fr; }
+  .stats-grid{ grid-template-columns:repeat(2,1fr); }
+  .signature-grid{ grid-template-columns:repeat(2,1fr); grid-auto-rows:240px; }
+  .signature-grid .span-2{ grid-column:span 2; }
+  .offers-grid{ grid-template-columns:1fr; }
+  .offers-grid .offer-card.featured{ grid-row:auto; }
+  .auth-split{ grid-template-columns:1fr; }
+  .auth-visual{ display:none; }
+  .form-row{ grid-template-columns:1fr; }
+}
+
+/* ================= Mobile (≤720px) ================= */
+@media (max-width:720px){
+  :root{ --header-h:72px; --space-xl:3.2rem; --space-lg:2.2rem; }
+  .brand{ font-size:1.25rem; }
+  .brand-mark{ width:32px; height:32px; }
+  .nav-actions .icon-link:not(.keep-mobile){ width:38px; height:38px; }
+
+  .hero{ min-height:auto; padding-block:3rem 2rem; }
+  .hero-cta{ flex-direction:column; align-items:stretch; }
+  .hero-cta .btn{ width:100%; }
+  .hero-stats{ flex-wrap:wrap; gap:1.4rem; }
+  .hero-chip{ display:none; }
+
+  .footer-grid{ grid-template-columns:1fr; gap:2.2rem; }
+  .footer-bottom{ flex-direction:column; text-align:center; }
+  .newsletter-form{ flex-direction:column; }
+
+  .stats-grid{ grid-template-columns:repeat(2,1fr); gap:1rem; }
+  .signature-grid{ grid-template-columns:1fr; grid-auto-rows:220px; }
+  .signature-grid .span-2{ grid-column:span 1; }
+  .signature-grid .span-row-2{ grid-row:span 1; }
+
+  .steps{ flex-wrap:wrap; }
+  .step-line{ width:24px; }
+  .step span.label{ display:none; }
+
+  .summary-card{ position:static; }
+  table{ min-width:560px; }
+
+  .tab-labels{ justify-content:flex-start; overflow-x:auto; flex-wrap:nowrap; padding-bottom:.4rem; }
+
+  .page-hero{ padding-block:2.5rem 1.6rem; }
+}
+
+/* ================= Small mobile (≤420px) ================= */
+@media (max-width:420px){
+  .container{ padding-inline:1rem; }
+  .hero h1{ font-size:2.1rem; }
+  .stats-grid{ grid-template-columns:1fr 1fr; }
+  .footer-bottom-links{ flex-direction:column; gap:.5rem; }
+}

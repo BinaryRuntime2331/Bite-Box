@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu | Bite Box</title>
+<meta name="description" content="Explore the full Bite Box menu — burgers, pizza, wraps, sandwiches, sides, beverages, desserts and combos.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍔</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container navbar">
+    <a href="index.html" class="brand"><span class="brand-mark">BB</span>Bite <span>Box</span></a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="menu.html" class="active">Menu</a>
+      <a href="about.html">About</a>
+      <a href="offers.html">Offers</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="login.html" class="icon-link" aria-label="Account">👤</a>
+      <a href="cart.html" class="icon-link" aria-label="Cart">🛍️<span class="icon-badge">3</span></a>
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle menu"><span></span><span></span><span></span></label>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Home</a><span class="sep">/</span><span class="current">Menu</span></div>
+      <h1>Our Full Menu</h1>
+      <p>Eight categories, one hundred and twenty dishes — all crafted fresh, all worth the craving.</p>
+    </div>
+  </section>
+
+  <!-- FEATURED / BESTSELLERS -->
+  <section class="section" style="padding-top:0;">
+    <div class="container">
+      <div class="section-header center">
+        <span class="eyebrow">Fan favorites</span>
+        <h2>Featured &amp; Bestsellers</h2>
+      </div>
+      <div class="menu-grid stagger">
+        <article class="food-card">
+          <a href="#dish-smash" style="display:block;">
+          <div class="food-card-media">
+            <div class="food-card-badges"><span class="badge badge-best">Bestseller</span></div>
+            <div class="food-card-fav">♥</div>
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=700&q=80" alt="Smoky double smash burger">
+          </div>
+          </a>
+          <div class="food-card-body">
+            <div class="food-card-cat">Burgers</div>
+            <h3 class="food-card-title">Smoky Double Smash</h3>
+            <p class="food-card-desc">Double beef patty, smoked cheddar, caramelized onion.</p>
+            <div class="food-card-rating"><span class="stars"></span> 4.9 (860)</div>
+            <div class="food-card-footer"><span class="price">₹329</span><span class="add-btn">+</span></div>
+          </div>
+        </article>
+        <article class="food-card">
+          <div class="food-card-media">
+            <div class="food-card-badges"><span class="badge badge-popular">Popular</span></div>
+            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=700&q=80" alt="Wood fired truffle margherita pizza">
+          </div>
+          <div class="food-card-body">
+            <div class="food-card-cat">Pizza</div>
+            <h3 class="food-card-title">Truffle Margherita</h3>
+            <p class="food-card-desc">San Marzano tomato, fior di latte, truffle oil.</p>
+            <div class="food-card-rating"><span class="stars"></span> 4.8 (611)</div>
+            <div class="food-card-footer"><span class="price">₹399</span><span class="add-btn">+</span></div>
+          </div>
+        </article>
+        <article class="food-card">
+          <div class="food-card-media">
+            <div class="food-card-badges"><span class="badge badge-new">New</span></div>
+            <img src="https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&w=700&q=80" alt="Peri peri chicken wrap">
+          </div>
+          <div class="food-card-body">
+            <div class="food-card-cat">Wraps</div>
+            <h3 class="food-card-title">Peri-Peri Chicken Wrap</h3>
+            <p class="food-card-desc">Char-grilled chicken, peri sauce, warm tortilla.</p>
+            <div class="food-card-rating"><span class="stars"></span> 4.7 (402)</div>
+            <div class="food-card-footer"><span class="price">₹239</span><span class="add-btn">+</span></div>
+          </div>
+        </article>
+        <article class="food-card">
+          <div class="food-card-media">
+            <div class="food-card-badges"><span class="badge badge-limited">Limited</span></div>
+            <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=700&q=80" alt="Molten chocolate lava cake">
+          </div>
+          <div class="food-card-body">
+            <div class="food-card-cat">Desserts</div>
+            <h3 class="food-card-title">Molten Lava Cake</h3>
+            <p class="food-card-desc">Warm chocolate cake, molten centre, vanilla scoop.</p>
+            <div class="food-card-rating"><span class="stars"></span> 4.9 (530)</div>
+            <div class="food-card-footer"><span class="price">₹189</span><span class="add-btn">+</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORY TABS (CSS-only, radio-based) -->
+  <section class="section section-alt">
+    <div class="container tabs">
+      <div class="section-header center">
+        <span class="eyebrow">Browse by category</span>
+        <h2>Full Category Menu</h2>
+      </div>
+
+      <input type="radio" name="menu-tab" id="tab-1" class="tab-input" checked>
+      <input type="radio" name="menu-tab" id="tab-2" class="tab-input">
+      <input type="radio" name="menu-tab" id="tab-3" class="tab-input">
+      <input type="radio" name="menu-tab" id="tab-4" class="tab-input">
+      <input type="radio" name="menu-tab" id="tab-5" class="tab-input">
+      <input type="radio" name="menu-tab" id="tab-6" class="tab-input">
+      <input type="radio" name="menu-tab" id="tab-7" class="tab-input">
+      <input type="radio" name="menu-tab" id="tab-8" class="tab-input">
+
+      <div class="tab-labels">
+        <label for="tab-1">🍔 Burgers</label>
+        <label for="tab-2">🍕 Pizza</label>
+        <label for="tab-3">🌯 Wraps</label>
+        <label for="tab-4">🥪 Sandwiches</label>
+        <label for="tab-5">🍟 Fries &amp; Sides</label>
+        <label for="tab-6">🥤 Beverages</label>
+        <label for="tab-7">🍰 Desserts</label>
+        <label for="tab-8">🍱 Combos</label>
+      </div>
+
+      <div class="tab-panels">
+
+        <div class="tab-panel menu-grid" id="panel-1">
+          <article class="food-card"><div class="food-card-media"><div class="food-card-badges"><span class="badge badge-best">Bestseller</span></div><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=700&q=80" alt="Smoky double smash burger"></div><div class="food-card-body"><div class="food-card-cat">Burgers</div><h3 class="food-card-title">Smoky Double Smash</h3><p class="food-card-desc">Double patty, smoked cheddar, brioche bun.</p><div class="food-card-rating"><span class="stars"></span> 4.9</div><div class="food-card-footer"><span class="price">₹329</span><span class="add-btn">+</span></div></div></article>
+          <article class="food-card"><div class="food-card-media"><div class="food-card-badges"><span class="badge badge-nonveg">Non-Veg</span></div><img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?auto=format&fit=crop&w=700&q=80" alt="Classic grilled chicken burger"></div><div class="food-card-body"><div class="food-card-cat">Burgers</div><h3 class="food-card-title">Grilled Chicken Classic</h3><p class="food-card-desc">Grilled chicken breast, lettuce, house mayo.</p><div class="food-card-rating"><span class="stars"></span> 4.6</div><div class="food-card-footer"><span class="price">₹269</span><span class="add-btn">+</span></div></div></article>
+          <article class="food-card"><div class="food-card-media"><div class="food-card-badges"><span class="badge badge-veg">Veg</span></div><img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=700&q=80" alt="Crispy paneer tikka burger"></div><div class="food-card-body"><div class="food-card-cat">Burgers</div><h3 class="food-card-title">Paneer Tikka Burger</h3><p class="food-card-desc">Char-grilled paneer, mint mayo, pickled onion.</p><div class="food-card-rating"><span class="stars"></span> 4.7</div><div class="food-card-footer"><span class="price">₹249</span><span class="add-btn">+</span></div></div></article>
+          <article class="food-card"><div class="food-card-media"><img src="https://images.unsplash.com/photo-1553979459-d2229ba7433b?auto=format&fit=crop&w=700&q=80" alt="Spicy jalapeno beef burger"></div><div class="food-card-body"><div class="food-card-cat">Burgers</div><h3 class="food-card-title">Jalapeño Firestorm</h3><p class="food-card-desc">Beef patty, jalapeños, spicy chipotle sauce.</p><div class="food-card-rating"><span class="stars"></span> 4.5</div><div class="food-card-footer"><span class="price">₹299</span><span class="add-btn">+</span></div></div></article>
+        </div>
+
+        <div class="tab-panel menu-grid" id="panel-2">
+          <article class="food-card"><div class="food-card-media"><div class="food-card-badges"><span class="badge badge-popular">Popular</span></div><img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=700&q=80" alt="Truffle margherita pizza"></div><div class="food-card-body"><div class="food-card-cat">Pizza</div><h3 class="food-card-title">Truffle Margherita</h3><p class="food-card-desc">Fior di latte, San Marzano tomato, truffle oil.</p><div class="food-card-rating"><span class="stars"></span> 4.8</div><div class="food-card-footer"><span class="price">₹399</span><span class="add-btn">+</span></div></div></article>
+          <article class="food-card"><div class="food-card-media"><img src="https://images.unsplash.com/photo-1594007654729-407eedc4be65?auto=format&fit=crop&w=700&q=80" alt="Pepperoni pizza with melted cheese"></div><div class="food-card-body"><div class="food-card-cat">Pizza</div><h3 class="food-card-title">Loaded Pepperoni</h3><p class="food-card-desc">Double pepperoni, mozzarella, oregano.</p><div class="food-card-rating"><span class="stars"></span> 4.7</div><div class="food-card-footer"><span class="price">₹429</span><span class="add-btn">+</span></div></div></article>
+          <article class="food-card"><div class="food-card-media"><div class="food-card-badges"><span class="badge badge-veg">Veg</span></div><img src="https://images.unsplash.com/photo-1548369937-47519962c11a?auto=format&fit=crop&w=700&q=80" alt="Farmhouse vegetable pizza"></div><div class="food-card-body"><div class="food-card-cat">Pizza</div><h3 class="food-card-title">Farmhouse Veggie</h3><p class="food-card-desc">Bell pepper, corn, onion, olives, mozzarella.</p><div class="food-card-rating"><span class="stars"></span> 4.5</div><div class="food-card-footer"><span class="price">₹359</span><span class="add-btn">+</span></div></div></article>
+          <article class="food-card"><div class="food-card-media"><img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=700&q=80" alt="BBQ chicken pizza"></div><div class="food-card-body"><div class="food-card-cat">Pizza</div><h3 class="food-card-title">BBQ Chicken Blaze</h3><p class="food-card-desc">Smoked chicken, BBQ drizzle, red onion.</p><div class="food-card-rating"><span class="stars"></span> 4.6</div><div class="food-card-footer"><span class="price">₹449</span><span class="add-btn">+</span></div></div></article>
+        </div>
+
+        <div class="tab-panel menu-grid" id="panel-3">
+          <article class="food-card"><div class="food-card-media"><div class="food-card-badges"><span class="badge badge-best">Bestseller</span></div><img src="https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&w=700&q=80" alt="Peri peri chicken wrap"></div><div class="food-card-body"><div class="food-card-cat">Wraps</div><h3 class="food-card-title">Peri-Peri Chicken Wrap</h3><p class="food-card-desc">Char-grilled chicken, peri sauce, tortilla.</p><div class="food-card-rating"><span class="stars"></span> 4.7</div><div class="food-card-footer"><span class="price">₹239</span><span class="add-btn">+</span></div></div></article>
+          <article class="food-card"><div class="food-card-media"><div class="food-card-badges"><span class="badge badge-veg">Veg</span></div><img src="https://images.unsplash.com/photo-1626200419199-391ae4be7a41?auto=format&fit=crop&w=700&q=80" alt="Paneer tikka wrap"></div><div class="food-card-body"><div class="food-card-cat">Wraps</div><h3 class="food-card-title">Paneer Tikka Wrap</h3><p class="food-card-desc">Tandoori paneer, mint chutney, onion.</p><div class="food-card-rating"><span class="stars"></span> 4.5</div><div class="food-card-footer"><span class="price">₹209</span><span class="add-btn">+</span></div></div></article>
+          <article class="food-card"><div class="food-card-media"><img src="https://images.unsplash.com/photo-1584208632869-05fa2b2a5934?auto=format&fit=crop&w=700&q=80" alt="Falafel wrap with hummus"></div><div class="food-card-body"><div class="food-card-cat">Wraps</div><h3 class="food-card-title">Falafel &amp; Hummus Wrap</h3><p class="food-card-desc">Crispy falafel, hummus, fresh greens.</p><div class="food-card-rating"><span class="stars"></span> 4.4</div><div class="food-card-footer"><span class="price">₹199</span><span class="add-btn">+</span></div></div></article>
+          <article class="food-card"><div class="food-card-media"><img src="https://images.unsplash.com/photo-1626700051816-eea38f6e28e0?auto=format&fit=crop&w=700&q=80" alt="Spicy beef shawarma wrap"></div><div class="food-card-body"><div class="food-card-cat">Wraps</div><h3 class="food-card-title">Beef Shawarma Wrap</h3><p class="food-card-desc">Spiced beef, garlic sauce, pickles.</p><div class="food-card-rating"><span class="stars"></span> 4.6</div><div class="food-card-footer"><span class="price">₹249</span><span class="add-btn">+</span></div></div></article>
+        </div>
+
+        <div class="tab-panel menu-grid" id="panel-4">
+          <article class="food-card"><div class="food-card-media"><img src="https://images.unsplash.com/photo-1553909489-cd47e0ef937f?auto=format&fit=crop&w=700&q=80" alt="Club sandwich with fries"></div><div class="food-card-body"><div class="food-card-cat">Sandwiches</div><h3 class="food-card-title">Triple Decker Club</h3><p class="food-card-desc">Chicken, egg, cheese, lettuce, tomato.</p><div class="food-card-rating"><span class="stars"></span> 4.6</div><div class="food-card-footer"><span class="price">₹229</span><span class="add-btn">+</span></div></div></article>
+          <article class="food-card"><div class="food-card-media"><div class="food-card-badges"><span class="badge badge-veg">Veg</span></div><img src="https://images.unsplash.com/photo-1481070555726-e2fe8357725c?auto=format&fit=crop&w=700&q=80" alt="Grilled cheese sandwich"></div><div class="food-card-body"><div class="food-card-cat">Sandwiches</div><h3 class="food-card-title">Four Cheese Grill</h3><p class="food-card-desc">Cheddar, mozzarella, parmesan, gouda.</p><div class="food-card-rating"><span class="stars"></span> 4.5</div><div class="food-card-footer"><span class="price">₹189</span><span class="add-btn">+</span></div></div></article>
+          <article class="food-card"><div class="food-card-media"><img src="https://images.unsplash.com/photo-1567234669003-dce7a7a88821?auto=format&fit=crop&w=700&q=80" alt="Tuna melt sandwich"></div><div class="food-card-body"><div class="food-card-cat">Sandwiches</div><h3 class="food-card-title">Tuna Melt</h3><p class="food-card-desc">Tuna mayo, melted cheese, toasted bread.</p><div class="food-card-rating"><span class="stars"></span> 4.4</div><div class="food-card-footer"><span class="price">₹219</span><span class="add-btn">+</span></div></div></article>
+          <article class="food-card"><div class="food-card-media"><img src="https://images.unsplash.com/photo-1550507992-eb63ffee0847?auto=format&fit=crop&w=700&q=80" alt="Steak sandwich with caramelized onion"></div><div class="food-card-body"><div class="food-card-cat">Sandwiches</div><h3 class="food-card-title">Steak &amp; Onion</h3><p class="food-card-desc">Sliced steak, caramelized onion, garlic aioli.</p><div class="food-card-rating"><span class="stars"></span> 4.8</div><div class="food-card-footer"><span class="price">₹299</span><span class="add-btn">+</span></div></div></article>
+        </div>
+
+        <div class="tab-panel menu-grid" id="panel-5">
+          <article class="food-card"><div class="food-card-media"><div class="food-card-badges"><span class="badge badge-best">Bestseller</span></div><img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=700&q=80" alt="Crispy loaded fries"></div><div class="food-card-body"><div class="food-card-cat">Sides</div><h3 class="food-card-title">Loaded Cheese Fries</h3><p class="food-card-desc">Crispy fries, cheese sauce, jalapeños.</p><div class="food-card-rating"><span class="stars"></span> 4.7</div><div class="food-card-footer"><span class="price">₹159</span><span class="add-btn">+</span></div></div></article>
+          <article class="food-card"><div class="food-card-media"><img src="https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?auto=format&fit=crop&w=700&q=80" alt="Crunchy onion rings"></div><div class="food-card-body"><div class="food-card-cat">Sides</div><h3 class="food-card-title">Crunchy Onion Rings</h3><p class="food-card-desc">Beer-battered, golden fried, house dip.</p><div class="food-card-rating"><span class="stars"></span> 4.5</div><div class="food-card-footer"><span class="price">₹139</span><span class="add-btn">+</span></div></div></article>
+          <article class="food-card"><div class="food-card-media"><img src="https://images.unsplash.com/photo-1585109649139-366815a0d713?auto=format&fit=crop&w=700&q=80" alt="Spicy chicken wings"></div><div class="food-card-body"><div class="food-card-cat">Sides</div><h3 class="food-card-title">Fire Wings (6pc)</h3><p class="food-card-desc">Double fried, tossed in hot sauce.</p><div class="food-card-rating"><span class="stars"></span> 4.8</div><div class="food-card-footer"><span class="price">₹219</span><span class="add-btn">+</span></div></div></article>
+          <article class="food-card"><div class="food-card-media"><div class="food-card-badges"><span class="badge badge-veg">Veg</span></div><img src="https://images.unsplash.com/photo-1541599468348-e96984315921?auto=format&fit=crop&w=700&q=80" alt="Nachos with cheese dip"></div><div class="food-card-body"><div class="food-card-cat">Sides</div><h3 class="food-card-title">Loaded Nachos</h3><p class="food-card-desc">Tortilla chips, salsa, cheese, jalapeño.</p><div class="food-card-rating"><span class="stars"></span> 4.4</div><div class="food-card-footer"><span class="price">₹179</span><span class="add-btn">+</span></div></div></article>
+        </div>
+
+        <div class="tab-panel menu-grid" id="panel-6">
+          <article class="food-card"><div class="food-card-media"><img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=700&q=80" alt="Fresh cold lemonade"></div><div class="food-card-body"><div class="food-card-cat">Beverages</div><h3 class="food-card-title">Sparkling Lemonade</h3><p class="food-card-desc">Fresh lemon, mint, soda.</p><div class="food-card-rating"><span class="stars"></span> 4.5</div><div class="food-card-footer"><span class="price">₹99</span><span class="add-btn">+</span></div></div></article>
+          <article class="food-card"><div class="food-card-media"><img src="https://images.unsplash.com/photo-1546173159-315724a31696?auto=format&fit=crop&w=700&q=80" alt="Chocolate milkshake with whipped cream"></div><div class="food-card-body"><div class="food-card-cat">Beverages</div><h3 class="food-card-title">Choco Fudge Shake</h3><p class="food-card-desc">Rich chocolate, whipped cream, cocoa.</p><div class="food-card-rating"><span class="stars"></span> 4.8</div><div class="food-card-footer"><span class="price">₹149</span><span class="add-btn">+</span></div></div></article>
+          <article class="food-card"><div class="food-card-media"><img src="https://images.unsplash.com/photo-1437418747212-8d9709afab22?auto=format&fit=crop&w=700&q=80" alt="Iced coffee with milk"></div><div class="food-card-body"><div class="food-card-cat">Beverages</div><h3 class="food-card-title">Cold Brew Iced Coffee</h3><p class="food-card-desc">Slow-steeped, smooth, lightly sweetened.</p><div class="food-card-rating"><span class="stars"></span> 4.6</div><div class="food-card-footer"><span class="price">₹129</span><span class="add-btn">+</span></div></div></article>
+          <article class="food-card"><div class="food-card-media"><img src="https://images.unsplash.com/photo-1546171753-97d7676e4602?auto=format&fit=crop&w=700&q=80" alt="Fresh fruit mocktail"></div><div class="food-card-body"><div class="food-card-cat">Beverages</div><h3 class="food-card-title">Tropical Mocktail</h3><p class="food-card-desc">Mixed fruit, soda, fresh mint.</p><div class="food-card-rating"><span class="stars"></span> 4.5</div><div class="food-card-footer"><span class="price">₹139</span><span class="add-btn">+</span></div></div></article>
+        </div>
+
+        <div class="tab-panel menu-grid" id="panel-7">
+          <article class="food-card"><div class="food-card-media"><div class="food-card-badges"><span class="badge badge-best">Bestseller</span></div><img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=700&q=80" alt="Molten chocolate lava cake"></div><div class="food-card-body"><div class="food-card-cat">Desserts</div><h3 class="food-card-title">Molten Lava Cake</h3><p class="food-card-desc">Warm cake, molten centre, vanilla scoop.</p><div class="food-card-rating"><span class="stars"></span> 4.9</div><div class="food-card-footer"><span class="price">₹189</span><span class="add-btn">+</span></div></div></article>
+          <article class="food-card"><div class="food-card-media"><img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=700&q=80" alt="New york cheesecake slice"></div><div class="food-card-body"><div class="food-card-cat">Desserts</div><h3 class="food-card-title">NY Cheesecake</h3><p class="food-card-desc">Classic baked cheesecake, berry compote.</p><div class="food-card-rating"><span class="stars"></span> 4.7</div><div class="food-card-footer"><span class="price">₹169</span><span class="add-btn">+</span></div></div></article>
+          <article class="food-card"><div class="food-card-media"><img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=700&q=80" alt="Belgian waffle with ice cream"></div><div class="food-card-body"><div class="food-card-cat">Desserts</div><h3 class="food-card-title">Belgian Waffle</h3><p class="food-card-desc">Crisp waffle, ice cream, chocolate drizzle.</p><div class="food-card-rating"><span class="stars"></span> 4.6</div><div class="food-card-footer"><span class="price">₹179</span><span class="add-btn">+</span></div></div></article>
+          <article class="food-card"><div class="food-card-media"><img src="https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&w=700&q=80" alt="Assorted donuts"></div><div class="food-card-body"><div class="food-card-cat">Desserts</div><h3 class="food-card-title">Glazed Donut Trio</h3><p class="food-card-desc">Three flavors, freshly glazed.</p><div class="food-card-rating"><span class="stars"></span> 4.4</div><div class="food-card-footer"><span class="price">₹129</span><span class="add-btn">+</span></div></div></article>
+        </div>
+
+        <div class="tab-panel menu-grid" id="panel-8">
+          <article class="food-card"><div class="food-card-media"><div class="food-card-badges"><span class="badge badge-offer">Save 20%</span></div><img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=700&q=80" alt="Burger fries and drink combo"></div><div class="food-card-body"><div class="food-card-cat">Combos</div><h3 class="food-card-title">Smash Combo</h3><p class="food-card-desc">Smash burger, fries, sparkling lemonade.</p><div class="food-card-rating"><span class="stars"></span> 4.8</div><div class="food-card-footer"><span class="price">₹449 <small>₹549</small></span><span class="add-btn">+</span></div></div></article>
+          <article class="food-card"><div class="food-card-media"><div class="food-card-badges"><span class="badge badge-offer">Save 15%</span></div><img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=700&q=80" alt="Pizza and drink combo"></div><div class="food-card-body"><div class="food-card-cat">Combos</div><h3 class="food-card-title">Pizza Party Combo</h3><p class="food-card-desc">Regular pizza + garlic bread + mocktail.</p><div class="food-card-rating"><span class="stars"></span> 4.7</div><div class="food-card-footer"><span class="price">₹599 <small>₹699</small></span><span class="add-btn">+</span></div></div></article>
+          <article class="food-card"><div class="food-card-media"><img src="https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&w=700&q=80" alt="Wrap and shake combo"></div><div class="food-card-body"><div class="food-card-cat">Combos</div><h3 class="food-card-title">Wrap &amp; Shake Combo</h3><p class="food-card-desc">Peri wrap, fries, choco shake.</p><div class="food-card-rating"><span class="stars"></span> 4.6</div><div class="food-card-footer"><span class="price">₹399 <small>₹469</small></span><span class="add-btn">+</span></div></div></article>
+          <article class="food-card"><div class="food-card-media"><img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=700&q=80" alt="Family feast combo"></div><div class="food-card-body"><div class="food-card-cat">Combos</div><h3 class="food-card-title">Family Feast (4pax)</h3><p class="food-card-desc">2 burgers, 1 pizza, sides, dessert, drinks.</p><div class="food-card-rating"><span class="stars"></span> 4.9</div><div class="food-card-footer"><span class="price">₹1299 <small>₹1599</small></span><span class="add-btn">+</span></div></div></article>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOD DETAIL MODAL-STYLE OVERLAY (:target) -->
+<div class="modal-overlay" id="dish-smash">
+  <div class="modal-box">
+    <a href="#" class="modal-close" aria-label="Close">✕</a>
+    <div class="modal-media">
+      <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=900&q=80" alt="Smoky double smash burger close-up">
+    </div>
+    <span class="badge badge-best">Bestseller</span>
+    <h3 style="font-size:1.6rem; margin-block:.6rem .4rem;">Smoky Double Smash</h3>
+    <div class="review-stars" style="margin-bottom:.6rem;"></div>
+    <p style="color:var(--text-muted); margin-bottom:1.2rem;">Two smashed beef patties, smoked cheddar, caramelized onions and house sauce, stacked in a toasted brioche bun. Our most-loved burger, made fresh to order.</p>
+    <div class="food-card-footer">
+      <span class="price">₹329</span>
+      <a href="cart.html" class="btn btn-primary">Add to Cart</a>
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand"><span class="brand-mark">BB</span>Bite <span>Box</span></a>
+        <p>Premium comfort food, plated with love. Crave it, bite it, love it — every single time.</p>
+        <div class="social-row">
+          <a href="#" aria-label="Instagram">📷</a>
+          <a href="#" aria-label="Facebook">📘</a>
+          <a href="#" aria-label="Twitter">🐦</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About Us</a>
+        <a href="offers.html">Offers</a>
+      </div>
+      <div class="footer-col">
+        <h4>Account</h4>
+        <a href="login.html">Login</a>
+        <a href="signup.html">Sign Up</a>
+        <a href="cart.html">My Cart</a>
+        <a href="orders.html">Order History</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul class="footer-contact">
+          <li>📍 12 Feast Street, Mumbai, IN</li>
+          <li>📞 +91 98765 43210</li>
+          <li>✉️ hello@bitebox.com</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Bite Box. All rights reserved.</span>
+      <div class="footer-bottom-links">
+        <a href="contact.html">Privacy Policy</a>
+        <a href="contact.html">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

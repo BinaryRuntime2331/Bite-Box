@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us | Bite Box</title>
+<meta name="description" content="Learn the Bite Box story — our mission, philosophy and commitment to fresh, premium ingredients.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍔</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container navbar">
+    <a href="index.html" class="brand"><span class="brand-mark">BB</span>Bite <span>Box</span></a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="about.html" class="active">About</a>
+      <a href="offers.html">Offers</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="login.html" class="icon-link" aria-label="Account">👤</a>
+      <a href="cart.html" class="icon-link" aria-label="Cart">🛍️<span class="icon-badge">3</span></a>
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle menu"><span></span><span></span><span></span></label>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Home</a><span class="sep">/</span><span class="current">About</span></div>
+      <h1>Our Story</h1>
+      <p>From a single kitchen to a citywide craving — this is how Bite Box came to be.</p>
+    </div>
+  </section>
+
+  <!-- STORY: IMAGE + CONTENT SPLIT -->
+  <section class="section" style="padding-top:0;">
+    <div class="container" style="display:grid; grid-template-columns:1fr 1fr; gap:var(--space-lg); align-items:center;">
+      <div class="reveal" style="border-radius:var(--radius-lg); overflow:hidden; box-shadow:var(--shadow-soft);">
+        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=900&q=80" alt="Warm interior of the Bite Box restaurant kitchen">
+      </div>
+      <div class="reveal reveal-delay-1">
+        <span class="eyebrow">Since 2016</span>
+        <h2 style="font-size:clamp(1.8rem,3.4vw,2.6rem); margin-bottom:1rem;">Born From a Craving for Better Fast Food</h2>
+        <p style="color:var(--text-muted); margin-bottom:1rem;">Bite Box started as a tiny 200 sq. ft. kitchen with one mission: prove that fast food didn't have to mean low quality. No shortcuts, no frozen fillers — just honest ingredients cooked with intention.</p>
+        <p style="color:var(--text-muted);">A decade later, that same obsession with flavor and freshness powers every box we send out — plated with the same care as the very first order.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MISSION & PHILOSOPHY -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header center">
+        <span class="eyebrow">What drives us</span>
+        <h2>Mission &amp; Philosophy</h2>
+      </div>
+      <div class="feature-grid stagger">
+        <div class="feature-card card">
+          <div class="feature-icon">🎯</div>
+          <h3>Our Mission</h3>
+          <p>Deliver restaurant-grade food, fast — without compromising on ingredients, flavor or presentation.</p>
+        </div>
+        <div class="feature-card card">
+          <div class="feature-icon">💛</div>
+          <h3>Our Philosophy</h3>
+          <p>Great food is built on respect — for ingredients, for craft, and for the people who crave it.</p>
+        </div>
+        <div class="feature-card card">
+          <div class="feature-icon">🔁</div>
+          <h3>Consistency</h3>
+          <p>Every box, every city, every time — the same standard of quality you can rely on.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUALITY / FRESH INGREDIENTS -->
+  <section class="section">
+    <div class="container" style="display:grid; grid-template-columns:1fr 1fr; gap:var(--space-lg); align-items:center;">
+      <div class="reveal">
+        <span class="eyebrow">Farm to box</span>
+        <h2 style="font-size:clamp(1.8rem,3.4vw,2.6rem); margin-bottom:1rem;">Quality &amp; Fresh Ingredients</h2>
+        <p style="color:var(--text-muted); margin-bottom:1.4rem;">We partner directly with local farms and trusted suppliers so every patty, vegetable and sauce reaches your box at peak freshness — never frozen for long, never compromised.</p>
+        <div class="tag-row">
+          <span class="badge badge-veg">Farm Fresh Produce</span>
+          <span class="badge badge-best">Zero Preservatives</span>
+          <span class="badge badge-new">Daily Sourcing</span>
+        </div>
+      </div>
+      <div class="reveal reveal-delay-1" style="border-radius:var(--radius-lg); overflow:hidden; box-shadow:var(--shadow-soft);">
+        <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=900&q=80" alt="Fresh vegetables and ingredients laid out on a counter">
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card card"><div class="num">10+</div><div class="label">Years of Craft</div></div>
+        <div class="stat-card card"><div class="num">25K+</div><div class="label">Happy Customers</div></div>
+        <div class="stat-card card"><div class="num">8</div><div class="label">City Kitchens</div></div>
+        <div class="stat-card card"><div class="num">120+</div><div class="label">Signature Dishes</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM / BRAND VISUAL -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header center">
+        <span class="eyebrow">Behind the box</span>
+        <h2>Meet the Kitchen</h2>
+        <p>The chefs and craftspeople who bring every Bite Box order to life.</p>
+      </div>
+      <div class="feature-grid stagger">
+        <div class="feature-card card text-center">
+          <div style="width:96px; height:96px; border-radius:50%; overflow:hidden; margin:0 auto 1rem; border:2px solid var(--border-gold);">
+            <img src="https://images.unsplash.com/photo-1583394293214-28ded15ee548?auto=format&fit=crop&w=300&q=80" alt="Head chef portrait">
+          </div>
+          <h3>Arjun Mehta</h3>
+          <p>Executive Chef</p>
+        </div>
+        <div class="feature-card card text-center">
+          <div style="width:96px; height:96px; border-radius:50%; overflow:hidden; margin:0 auto 1rem; border:2px solid var(--border-gold);">
+            <img src="https://images.unsplash.com/photo-1595257841889-8ea55d7ea56d?auto=format&fit=crop&w=300&q=80" alt="Sous chef portrait">
+          </div>
+          <h3>Priya Sen</h3>
+          <p>Sous Chef</p>
+        </div>
+        <div class="feature-card card text-center">
+          <div style="width:96px; height:96px; border-radius:50%; overflow:hidden; margin:0 auto 1rem; border:2px solid var(--border-gold);">
+            <img src="https://images.unsplash.com/photo-1607631568010-a87245c0daf8?auto=format&fit=crop&w=300&q=80" alt="Pastry chef portrait">
+          </div>
+          <h3>Kabir Anand</h3>
+          <p>Pastry Chef</p>
+        </div>
+        <div class="feature-card card text-center">
+          <div style="width:96px; height:96px; border-radius:50%; overflow:hidden; margin:0 auto 1rem; border:2px solid var(--border-gold);">
+            <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=300&q=80" alt="Operations lead portrait">
+          </div>
+          <h3>Sara Khan</h3>
+          <p>Operations Lead</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="final-cta">
+        <h2>Taste the Difference Yourself</h2>
+        <p>Explore our menu and discover why thousands crave Bite Box every week.</p>
+        <div class="btn-row">
+          <a href="menu.html" class="btn btn-primary">View Menu</a>
+          <a href="contact.html" class="btn btn-outline">Get in Touch</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand"><span class="brand-mark">BB</span>Bite <span>Box</span></a>
+        <p>Premium comfort food, plated with love. Crave it, bite it, love it — every single time.</p>
+        <div class="social-row">
+          <a href="#" aria-label="Instagram">📷</a>
+          <a href="#" aria-label="Facebook">📘</a>
+          <a href="#" aria-label="Twitter">🐦</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About Us</a>
+        <a href="offers.html">Offers</a>
+      </div>
+      <div class="footer-col">
+        <h4>Account</h4>
+        <a href="login.html">Login</a>
+        <a href="signup.html">Sign Up</a>
+        <a href="cart.html">My Cart</a>
+        <a href="orders.html">Order History</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul class="footer-contact">
+          <li>📍 12 Feast Street, Mumbai, IN</li>
+          <li>📞 +91 98765 43210</li>
+          <li>✉️ hello@bitebox.com</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Bite Box. All rights reserved.</span>
+      <div class="footer-bottom-links">
+        <a href="contact.html">Privacy Policy</a>
+        <a href="contact.html">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

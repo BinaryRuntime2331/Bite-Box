@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Customer Management | Bite Box Admin</title>
+<meta name="description" content="Manage Bite Box customers — contact details and order summaries.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍔</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/animations.css">
+<link rel="stylesheet" href="../css/responsive.css">
+<link rel="stylesheet" href="../css/admin.css">
+</head>
+<body class="admin-body">
+
+<div class="admin-shell">
+  <aside class="admin-sidebar">
+    <div class="admin-brand"><span class="brand-mark">BB</span><span class="txt">Bite Box<br><small style="font-size:.6rem; color:var(--text-muted);">ADMIN PANEL</small></span></div>
+    <div class="admin-nav-label">Main</div>
+    <nav class="admin-nav">
+      <a href="index.html"><span class="ic">📊</span><span class="txt">Dashboard</span></a>
+      <a href="menu.html"><span class="ic">🍔</span><span class="txt">Menu Management</span></a>
+      <a href="orders.html"><span class="ic">🧾</span><span class="txt">Orders</span></a>
+      <a href="customers.html" class="active"><span class="ic">👥</span><span class="txt">Customers</span></a>
+    </nav>
+    <div class="admin-nav-label">Marketing</div>
+    <nav class="admin-nav">
+      <a href="coupons.html"><span class="ic">🎟️</span><span class="txt">Coupons</span></a>
+      <a href="offers.html"><span class="ic">🔥</span><span class="txt">Offers</span></a>
+      <a href="reviews.html"><span class="ic">⭐</span><span class="txt">Reviews</span></a>
+    </nav>
+    <div class="admin-sidebar-foot"><a href="../index.html" style="color:var(--text-muted);">← Back to Website</a></div>
+  </aside>
+
+  <div class="admin-main">
+    <header class="admin-topbar">
+      <h1>Customer Management</h1>
+      <div class="admin-search">🔍 <span>Search customers...</span></div>
+      <div class="admin-topbar-actions">
+        <a href="#" class="icon-link" aria-label="Notifications">🔔</a>
+        <div class="admin-user"><div class="avatar">AD</div><div><div class="admin-user-name">Admin User</div><div class="admin-user-role">Super Admin</div></div></div>
+      </div>
+    </header>
+
+    <div class="admin-content">
+
+      <div class="metric-grid" style="grid-template-columns:repeat(3,1fr);">
+        <div class="metric-card"><div class="metric-top"><div class="metric-icon">👥</div></div><div class="metric-value">25,304</div><div class="metric-label">Total Customers</div></div>
+        <div class="metric-card"><div class="metric-top"><div class="metric-icon">🆕</div></div><div class="metric-value">312</div><div class="metric-label">New This Month</div></div>
+        <div class="metric-card"><div class="metric-top"><div class="metric-icon">💎</div></div><div class="metric-value">1,860</div><div class="metric-label">Gold Members</div></div>
+      </div>
+
+      <div class="admin-panel">
+        <div class="admin-table-wrap">
+          <table class="admin-table">
+            <thead><tr><th>Customer</th><th>Email</th><th>Phone</th><th>Orders</th><th>Total Spent</th><th>Status</th></tr></thead>
+            <tbody>
+              <tr>
+                <td><div class="mini-food"><div class="avatar" style="width:36px; height:36px; font-size:.75rem;">DR</div><strong>Dheeraj Rai</strong></div></td>
+                <td>dheerajrai4u@gmail.com</td><td>98765 43210</td><td>27</td><td>₹9,840</td>
+                <td><span class="status status-delivered">Gold Member</span></td>
+              </tr>
+              <tr>
+                <td><div class="mini-food"><div class="avatar" style="width:36px; height:36px; font-size:.75rem;">AK</div><strong>Aditi Kapoor</strong></div></td>
+                <td>aditi.kapoor@email.com</td><td>91234 56780</td><td>19</td><td>₹6,120</td>
+                <td><span class="status status-delivered">Gold Member</span></td>
+              </tr>
+              <tr>
+                <td><div class="mini-food"><div class="avatar" style="width:36px; height:36px; font-size:.75rem;">RS</div><strong>Rohan Shah</strong></div></td>
+                <td>rohan.shah@email.com</td><td>90111 22334</td><td>11</td><td>₹3,410</td>
+                <td><span class="status status-progress">Active</span></td>
+              </tr>
+              <tr>
+                <td><div class="mini-food"><div class="avatar" style="width:36px; height:36px; font-size:.75rem;">MN</div><strong>Meher Nair</strong></div></td>
+                <td>meher.nair@email.com</td><td>98887 65432</td><td>6</td><td>₹1,980</td>
+                <td><span class="status status-progress">Active</span></td>
+              </tr>
+              <tr>
+                <td><div class="mini-food"><div class="avatar" style="width:36px; height:36px; font-size:.75rem;">YM</div><strong>Yash Malhotra</strong></div></td>
+                <td>yash.m@email.com</td><td>99001 12233</td><td>2</td><td>₹668</td>
+                <td><span class="status status-pending">New</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

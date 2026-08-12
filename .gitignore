@@ -1,0 +1,11 @@
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor/IDE
+.vscode/
+*.swp
+
+# Unrelated pre-existing file at project root (not part of Bite Box)
+/style.css

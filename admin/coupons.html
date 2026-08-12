@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coupon Management | Bite Box Admin</title>
+<meta name="description" content="Manage Bite Box coupon codes, discounts and validity.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍔</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/animations.css">
+<link rel="stylesheet" href="../css/responsive.css">
+<link rel="stylesheet" href="../css/admin.css">
+</head>
+<body class="admin-body">
+
+<div class="admin-shell">
+  <aside class="admin-sidebar">
+    <div class="admin-brand"><span class="brand-mark">BB</span><span class="txt">Bite Box<br><small style="font-size:.6rem; color:var(--text-muted);">ADMIN PANEL</small></span></div>
+    <div class="admin-nav-label">Main</div>
+    <nav class="admin-nav">
+      <a href="index.html"><span class="ic">📊</span><span class="txt">Dashboard</span></a>
+      <a href="menu.html"><span class="ic">🍔</span><span class="txt">Menu Management</span></a>
+      <a href="orders.html"><span class="ic">🧾</span><span class="txt">Orders</span></a>
+      <a href="customers.html"><span class="ic">👥</span><span class="txt">Customers</span></a>
+    </nav>
+    <div class="admin-nav-label">Marketing</div>
+    <nav class="admin-nav">
+      <a href="coupons.html" class="active"><span class="ic">🎟️</span><span class="txt">Coupons</span></a>
+      <a href="offers.html"><span class="ic">🔥</span><span class="txt">Offers</span></a>
+      <a href="reviews.html"><span class="ic">⭐</span><span class="txt">Reviews</span></a>
+    </nav>
+    <div class="admin-sidebar-foot"><a href="../index.html" style="color:var(--text-muted);">← Back to Website</a></div>
+  </aside>
+
+  <div class="admin-main">
+    <header class="admin-topbar">
+      <h1>Coupon Management</h1>
+      <div class="admin-search">🔍 <span>Search coupon codes...</span></div>
+      <div class="admin-topbar-actions">
+        <a href="#" class="icon-link" aria-label="Notifications">🔔</a>
+        <div class="admin-user"><div class="avatar">AD</div><div><div class="admin-user-name">Admin User</div><div class="admin-user-role">Super Admin</div></div></div>
+      </div>
+    </header>
+
+    <div class="admin-content">
+
+      <div class="filter-bar">
+        <span class="filter-chip active">All Coupons</span>
+        <span class="filter-chip">Active</span>
+        <span class="filter-chip">Expired</span>
+        <a href="#new-coupon" class="btn btn-primary btn-sm" style="margin-left:auto;">+ New Coupon</a>
+      </div>
+
+      <div class="admin-card-grid">
+        <div class="coupon-card">
+          <div style="display:flex; justify-content:space-between; align-items:center;">
+            <span class="coupon-code">BITE150</span>
+            <div class="toggle-pill on"></div>
+          </div>
+          <p style="color:var(--text-muted); font-size:.85rem; margin-top:.6rem;">Flat ₹150 off · Min order ₹399</p>
+          <p style="color:var(--text-muted); font-size:.78rem; margin-top:.4rem;">Valid till Aug 31, 2026</p>
+        </div>
+        <div class="coupon-card">
+          <div style="display:flex; justify-content:space-between; align-items:center;">
+            <span class="coupon-code">WEEKEND30</span>
+            <div class="toggle-pill on"></div>
+          </div>
+          <p style="color:var(--text-muted); font-size:.85rem; margin-top:.6rem;">30% off combos · Fri–Sun only</p>
+          <p style="color:var(--text-muted); font-size:.78rem; margin-top:.4rem;">Valid till Sep 30, 2026</p>
+        </div>
+        <div class="coupon-card">
+          <div style="display:flex; justify-content:space-between; align-items:center;">
+            <span class="coupon-code">CRAVE20</span>
+            <div class="toggle-pill on"></div>
+          </div>
+          <p style="color:var(--text-muted); font-size:.85rem; margin-top:.6rem;">20% off · Min order ₹599</p>
+          <p style="color:var(--text-muted); font-size:.78rem; margin-top:.4rem;">Valid till Aug 20, 2026</p>
+        </div>
+        <div class="coupon-card">
+          <div style="display:flex; justify-content:space-between; align-items:center;">
+            <span class="coupon-code" style="opacity:.5;">SUMMER10</span>
+            <div class="toggle-pill"></div>
+          </div>
+          <p style="color:var(--text-muted); font-size:.85rem; margin-top:.6rem;">10% off · Min order ₹299</p>
+          <p style="color:var(--danger); font-size:.78rem; margin-top:.4rem;">Expired · Jun 30, 2026</p>
+        </div>
+      </div>
+
+      <div class="admin-panel" id="new-coupon" style="margin-top:1.6rem;">
+        <div class="admin-panel-head"><h2>Create New Coupon</h2></div>
+        <form action="#" method="post">
+          <div class="form-row">
+            <div class="form-group"><label for="cp-code">Coupon Code</label><input class="input" type="text" id="cp-code" name="code" placeholder="E.g. SAVE25" required></div>
+            <div class="form-group"><label for="cp-discount">Discount (%)</label><input class="input" type="number" id="cp-discount" name="discount" min="1" max="90" placeholder="25" required></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label for="cp-min">Minimum Order (₹)</label><input class="input" type="number" id="cp-min" name="minorder" min="0" placeholder="399"></div>
+            <div class="form-group"><label for="cp-expiry">Valid Till</label><input class="input" type="date" id="cp-expiry" name="expiry" required></div>
+          </div>
+          <label class="check-row" style="margin-bottom:1.2rem;"><input type="checkbox" checked> Activate immediately</label>
+          <button type="submit" class="btn btn-primary">Create Coupon</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
